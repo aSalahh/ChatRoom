@@ -10,6 +10,7 @@ class CustomFormTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       obscureText:obscureText!,
+
       validator: (data) {
         if (data!.isEmpty) {
           return 'field is required';
@@ -18,6 +19,7 @@ class CustomFormTextField extends StatelessWidget {
       onChanged: onChanged,
       decoration: InputDecoration(
         hintText: hintText,
+
         hintStyle: TextStyle(
           color: Colors.white,
         ),
